@@ -53,7 +53,7 @@ footer {
 }
 
 .parallax {
-	background-image: url(img/parallax.jpg);
+	background: url(img/parallax.jpg);
 	background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -68,8 +68,35 @@ footer {
 
 .slider {
 	text-align: center;
+	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	height: 80vh;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-input[type='radio']:checked {
-	background-color: grey;
+input[type="radio"]{
+	margin-bottom: 20px;
+}
+
+.slide1:checked ~ .slider {
+  background: url(img/slide1.jpg);
+}
+
+.slide2:checked ~ .slider {
+  background: url(img/slide2.jpg);
+}
+
+.slide3:checked ~ .images {
+  background: url(img/slide3.jpg);
+}
+
+.slide4:checked ~ .images {
+  background: url(img/slide4.jpg);
 }
